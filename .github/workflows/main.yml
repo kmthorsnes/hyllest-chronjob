@@ -1,0 +1,14 @@
+name: Run check every 15 minutes
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+jobs:
+  run-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run check script
+        run: node teller.js

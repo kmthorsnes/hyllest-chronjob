@@ -7,8 +7,7 @@ const urls = {
   nettavisen: "https://www.nettavisen.no/",
 };
 
-const dagbladetLinkRegex = /^https:\/\/www\.dagbladet\.no\/.*$/;
-const hyllRegex = /\bhyll[a-zA-ZøæåØÆÅ]*\b/gi;
+const hyllRegex = /\better[a-zA-ZøæåØÆÅ]*\b/gi;
 
 const checkCount = async (url) => {
   try {
@@ -34,25 +33,28 @@ const runChecks = async () => {
     };
     const $ = cheerio.load(await (await axios.get(value)).data);
     if (key === "dagbladet") {
-      $("a[aria-label]").each(function () {
-        const link = $(this).attr("href");
-        if (link.match(dagbladetLinkRegex)) {
-          const content = $(this).attr("aria-label");
-          if (content.match(hyllRegex)) {
-            hyllCounts[key].content.push({
-              content,
-              url: link,
-            });
-          }
-        }
+      $("a").each(function () {
+        console.log($(this).attr("ariaLabel"));
+        // const content = $(this).attr("ariaLabel");
+        // console.log(content)
+        // const link = $(this).attr("href");
+        // if (link.match(hyllRegex)) {
+        //   hyllCounts[key].content.push({
+        //     content: content,
+        //     url: link,
+        //   });
+        //   console.log("content:", content, "url:", link, "link:", this);
+        // }
       });
     } else if (key === "nettavisen") {
       $("a > h1, a > h2, a > h3, a > h4, a > h5, a > h6").each(function () {
         const content = $(this).text();
         if (content.match(hyllRegex)) {
+          const link =
+            "https://www.nettavisen.no" + $(this).parent("a").attr("href");
           hyllCounts[key].content.push({
             content,
-            url: value,
+            url: link,
           });
         }
       });
@@ -64,15 +66,18 @@ const runChecks = async () => {
   const data = {
     total_check: {
       all_sites: {
-        total_checks: 1,
+        total_checks: fs.existsSync("hylling.json")
+          ? JSON.parse(fs.readFileSync("hylling.json")).total_check.all_sites
+              .total_checks + 1
+          : 1,
         total_hyll_mean: allSitesHyllMean,
-        first_check_date: timestamp,
+        first_check_date: fs.existsSync("hylling.json")
+          ? JSON.parse(fs.readFileSync("hylling.json")).total_check.all_sites
+              .first_check_date
+          : timestamp,
       },
       dagbladet: {
         nettside_hyll_mean: hyllCounts.dagbladet.count,
-      },
-      nettavisen: {
-        nettside_hyll_mean: hyllCounts.nettavisen.count,
       },
     },
     latest_check: {

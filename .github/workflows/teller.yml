@@ -1,7 +1,7 @@
 name: Run teller.js every 15 minutes
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/3 * * * *'
 jobs:
   run-teller-js:
     runs-on: ubuntu-latest

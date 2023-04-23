@@ -1,8 +1,8 @@
 {
   "total_check": {
     "all_sites": {
-      "total_checks": 36,
-      "total_hyll_mean": 1.5,
+      "total_checks": 37,
+      "total_hyll_mean": 1,
       "first_check_date": "2023-04-20T23:06:57.724Z"
     },
     "dagbladet": {
@@ -10,13 +10,13 @@
     }
   },
   "latest_check": {
-    "latest_check_date": "2023-04-23T12:15:19.397Z",
-    "latest_total_hyll_count": 3,
+    "latest_check_date": "2023-04-23T12:20:33.328Z",
+    "latest_total_hyll_count": 2,
     "dagbladet": {
       "last_measurement": {
         "count": 1,
         "last_measurement_time": {
-          "timestamp": "2023-04-23T12:15:19.397Z",
+          "timestamp": "2023-04-23T12:20:33.328Z",
           "content": [
             {
               "content": "Karolines sjokk på swingersklubb",
@@ -28,17 +28,13 @@
     },
     "nettavisen": {
       "last_measurement": {
-        "count": 2,
+        "count": 1,
         "last_measurement_time": {
-          "timestamp": "2023-04-23T12:15:19.397Z",
+          "timestamp": "2023-04-23T12:20:33.328Z",
           "content": [
             {
               "content": "Avsløringen i RBK-garderoben sjokkerer: – Sykt",
               "url": "https://www.nettavisen.nohttps://www.nettavisen.no/sport/rbk-profilen-med-oppsiktsvekkende-resultater-i-verdenstoppen/s/5-95-1026449"
-            },
-            {
-              "content": "Scenene sjokkerer: – Bare i Premier League at dette skjer",
-              "url": "https://www.nettavisen.nohttps://www.nettavisen.no/sport/arsenal-bildene-sjokkerer-i-alle-dager/s/5-95-1050320"
             }
           ]
         }

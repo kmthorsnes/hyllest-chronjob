@@ -1,55 +1,44 @@
 {
   "total_check": {
     "all_sites": {
-      "total_checks": 15,
-      "total_hyll_mean": 4,
+      "total_checks": 36,
+      "total_hyll_mean": 1.5,
       "first_check_date": "2023-04-20T23:06:57.724Z"
     },
     "dagbladet": {
-      "nettside_hyll_mean": 2
+      "nettside_hyll_mean": 1
     }
   },
   "latest_check": {
-    "latest_check_date": "2023-04-20T23:30:30.676Z",
-    "latest_total_hyll_count": 8,
+    "latest_check_date": "2023-04-23T12:15:19.397Z",
+    "latest_total_hyll_count": 3,
     "dagbladet": {
       "last_measurement": {
-        "count": 2,
+        "count": 1,
         "last_measurement_time": {
-          "timestamp": "2023-04-20T23:30:30.676Z",
-          "content": []
+          "timestamp": "2023-04-23T12:15:19.397Z",
+          "content": [
+            {
+              "content": "Karolines sjokk på swingersklubb",
+              "url": "https://www.dagbladet.no/tema/karolines-sjokk-pa-swingersklubb/78575168"
+            }
+          ]
         }
       }
     },
     "nettavisen": {
       "last_measurement": {
-        "count": 6,
+        "count": 2,
         "last_measurement_time": {
-          "timestamp": "2023-04-20T23:30:30.676Z",
+          "timestamp": "2023-04-23T12:15:19.397Z",
           "content": [
             {
-              "content": "Slaktes etter vanvittige tabber: – Knapt så man tror det",
-              "url": "https://www.nettavisen.no/sport/gigantiske-tabber-da-united-rok-ut-av-europa-league/s/5-95-1048516"
+              "content": "Avsløringen i RBK-garderoben sjokkerer: – Sykt",
+              "url": "https://www.nettavisen.nohttps://www.nettavisen.no/sport/rbk-profilen-med-oppsiktsvekkende-resultater-i-verdenstoppen/s/5-95-1026449"
             },
             {
-              "content": "Russen måtte snu etter trusler fra skolebarn",
-              "url": "https://www.nettavisen.no/nyheter/skolebarn-truer-russ-med-stein-melk-og-eddik-odelegger-moroa-var/s/5-95-1047183"
-            },
-            {
-              "content": "Dette skjer med baren etter bruddet",
-              "url": "https://www.nettavisen.no/livsstil/forlater-landet-etter-bruddet-dette-skal-han-gjore-na/s/5-95-1041143"
-            },
-            {
-              "content": "Varsler søksmål etter skandaleoppslag",
-              "url": "https://www.nettavisen.no/sport/schumachers-familie-varsler-soksmal-mot-ukemagasin-etter-ki-skapt-intervju/s/5-95-1046960"
-            },
-            {
-              "content": "Amelia (3) endte på sykehus etter skrekk&shy;opplevelse: –⁠ Dette er ikke greit",
-              "url": "https://www.nettavisen.no/amelia-3-matte-legges-pa-isolat-med-skarlagensfeber-og-vannkopper/s/5-95-1043942"
-            },
-            {
-              "content": "Evakuerer etter ras: – Geolog skal sjekke forholdene",
-              "url": "https://www.nettavisen.no/evakuerer-busette-pa-tveitahaugen/s/5-22-508004"
+              "content": "Scenene sjokkerer: – Bare i Premier League at dette skjer",
+              "url": "https://www.nettavisen.nohttps://www.nettavisen.no/sport/arsenal-bildene-sjokkerer-i-alle-dager/s/5-95-1050320"
             }
           ]
         }
